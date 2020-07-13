@@ -1,0 +1,8 @@
+$type-heading: alternate-gothic-no-3-d, sans-serif;
+$type-general: trade-gothic-next, sans-serif;
+
+@mixin setType($face,$weight,$leading){
+	font-family: $face;
+	font-weight: $weight;
+	line-height: $leading;
+}

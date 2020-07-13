@@ -1,0 +1,24 @@
+.postid-25,
+.postid-23 {
+	main .wrapper {
+		figure {
+			@media screen and (min-width: 64em){
+				grid-column: 2 / span 5;
+				grid-row: 1;
+			}
+			@media screen and (min-width: 64em) and (max-height: 40em){
+				grid-column: 2 / span 3;
+			}
+		}
+		.content {
+			@media screen and (min-width: 64em){
+				grid-column: 7 / span 5;
+				grid-row: 1;
+				padding-left: 2.5rem;
+			}
+			@media screen and (min-width: 64em) and (max-height: 40em){
+				grid-column: 5 / span 5;
+			}
+		}
+	}
+}

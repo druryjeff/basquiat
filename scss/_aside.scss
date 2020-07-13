@@ -1,0 +1,48 @@
+.single {
+	.post-nav {
+		background-color: rgba(0,0,0,.1);
+		width: 100%;
+		padding: 1.5rem;
+		z-index: 0; // keep this tucked under main menu overlay
+		@media screen and (min-width: 40em){
+			padding: 2.5rem;
+		}
+		@media screen and (min-width: 64em){
+			position: fixed;
+			bottom: 1rem;
+			right: 0;
+			padding-bottom: 1.5rem;
+			width: 24rem;
+			text-align: right;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			li a::before {
+				color: rgba(255,255,255,.5);
+				@include setType($type-general,400,1);
+				display: block;
+				font-size: .875rem;
+				margin-bottom: .5rem;
+			}
+			li:first-child {
+				margin-bottom: 1rem;
+			}
+			li:first-child a::before {
+				content: 'Previous';
+			}
+			li:last-child a::before {
+				content: 'Next';
+			}
+			a {
+				@include setType($type-heading,700,1);
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 1.5rem;
+				color: #fff;
+			}
+		}
+		
+	}
+}

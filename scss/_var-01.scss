@@ -1,0 +1,28 @@
+.postid-21,
+.postid-15,
+.postid-19,
+.postid-17,
+.postid-13,
+.postid-8 {
+	main .wrapper {
+		figure {
+			@media screen and (min-width: 64em){
+				grid-column: 2 / span 4;
+				grid-row: 1;
+			}
+			@media screen and (min-width: 64em) and (max-height: 40em){
+				grid-column: 2 / span 3;
+			}
+		}
+		.content {
+			@media screen and (min-width: 64em){
+				grid-column: 6 / span 6;
+				grid-row: 1;
+				padding-left: 2.5rem;
+			}
+			@media screen and (min-width: 64em) and (max-height: 40em){
+				grid-column: 5 / span 5;
+			}
+		}
+	}
+}

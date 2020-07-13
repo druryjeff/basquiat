@@ -1,0 +1,48 @@
+.main-header {
+	position: absolute;
+	right: 1.5rem;
+	top: 1.5rem;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: 1fr;
+	align-items: center;
+	width: calc(100% - 3rem);
+	z-index: 20;
+	@media screen and (min-width: 40em){
+		position: fixed;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+		grid-gap: 2rem;
+		width: auto;
+	}
+	h1 {
+		grid-column: 1;
+		grid-row: 1;
+		margin: 0;
+		text-transform: uppercase;
+		z-index: 1;
+		line-height: 1;
+		@media screen and (min-width: 40em){
+			writing-mode: vertical-rl;
+			grid-row: 2;
+		}
+	}
+	button {
+		border: 0;
+		background-color: transparent;
+		padding: 0;
+		grid-column: 2;
+		grid-row: 1;
+		justify-self: end;
+		@media screen and (min-width: 40em){
+			grid-row: 1;
+			grid-column: 1;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+		img {
+			height: 1.25rem;
+		}
+	}
+}

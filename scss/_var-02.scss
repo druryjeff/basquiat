@@ -1,0 +1,25 @@
+.postid-27,
+.postid-11 {
+	main .wrapper {
+		// this layout has two rows
+		@media screen and (min-width: 64em){
+			grid-template-rows: auto auto;
+		}
+		figure {
+			@media screen and (min-width: 64em){
+				grid-column: 2 / span 10;
+				grid-row: 1;
+				margin-bottom: 2.5rem;
+			}
+			@media screen and (min-width: 64em) and (max-height: 40em){
+				grid-column: 4 / span 6;
+			}
+		}
+		.content {
+			@media screen and (min-width: 64em){
+				grid-column: 3 / span 6;
+				grid-row: 2;
+			}
+		}
+	}
+}
